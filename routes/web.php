@@ -24,3 +24,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/login', [ApiAuthController::class, 'login']);
+
+Route::post('/register', [ApiAuthController::class, 'register']);
